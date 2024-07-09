@@ -1,0 +1,137 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: rgba(150, 136, 136, 0.35);
+  height: 80px;
+  padding: 0 15px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar-brand i::before {
+  transform: rotate(45deg);
+}
+
+header a,
+header .navbar-brand {
+  color: white !important;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
+
+.banner {
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./images/home-bg.jpg);
+  background-size: cover;
+  overflow: auto;
+}
+
+.banner-content {
+  height: 50%;
+  width: 50%;
+  margin: 10% auto auto 100px;
+  color: white;
+  padding: 30px;
+  background-color: rgba(150, 136, 136, 0.35);
+}
+
+.banner-content h1 {
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.banner-about {
+  width: 80%;
+  margin: 50px auto auto auto;
+  padding: 30px;
+  background-color: rgba(150, 136, 136, 0.35);
+  color: white;
+}
+
+.banner-about .our-team {
+  list-style: none;
+}
+
+.banner-about .our-team li {
+  display: inline-block;
+  margin: 10px;
+  padding-right: 20px;
+  border-right: 1px solid white;
+}
+
+.banner-about .our-team li:last-of-type {
+  border: none;
+}
+
+.banner-contact {
+  height: auto;
+  width: 50%;
+  margin: 10% auto auto 100px;
+  color: white;
+  padding: 30px;
+  background-color: rgba(150, 136, 136, 0.35);
+}
+
+.social-icons {
+  position: absolute;
+  left: 30px;
+  right: auto;
+  bottom: 10%;
+}
+
+.social-icons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-icons ul li {
+  margin-bottom: 15px;
+}
+
+.social-icons ul li i::before {
+  color: white;
+}
+
+#results {
+  position: absolute;
+  right: 20px;
+  left: auto;
+  top: 60px;
+  width: 35%;
+  /* overflow-y: scroll; */
+}
+
+#results div {
+  height: 350px;
+  padding: 10px;
+  background-color: rgba(150, 136, 136, 0.35);
+  color: white;
+  margin-bottom: 10px;
+}
+
+#results div img {
+  height: 230px;
+  width: 100%;
+}
+
+#results div p {
+  overflow-wrap: break-word;
+}
+
+#results .message {
+  height: 80px;
+  padding: 10px;
+  background-color: rgba(150, 136, 136, 0.35);
+  color: white;
+}
